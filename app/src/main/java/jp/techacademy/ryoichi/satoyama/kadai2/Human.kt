@@ -3,13 +3,9 @@ package jp.techacademy.ryoichi.satoyama.kadai2
 import android.util.Log
 
 class Human: Animal, Thinkable {
-    var name: String
-    var age: Int
     var hobby: String
 
-    constructor(name: String, age: Int, hobby: String) {
-        this.name = name
-        this.age = age
+    constructor(name: String, age: Int, hobby: String): super(name, age) {
         this.hobby = hobby
     }
 
